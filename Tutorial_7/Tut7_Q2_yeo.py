@@ -76,9 +76,9 @@ def Tut7_Q2():
     test_MSE   = np.power(test_error, 2)
     test_MSE   = np.mean(test_MSE, 0)
 
-    print('====== No Regularization =======')
-    print('Training MSE: ', train_MSE)
-    print('Test MSE: ', test_MSE)
+    # print('====== No Regularization =======')
+    # print('Training MSE: ', train_MSE)
+    # print('Test MSE: ', test_MSE)
 
     # Plot MSE
     plt.figure(1, figsize=[9,4.5])
@@ -134,10 +134,10 @@ def Tut7_Q2():
     test_MSE   = np.power(test_error, 2)
     test_MSE   = np.mean(test_MSE, 0)
 
-    print('====== Regularization =======')
-    print('Training Loss', train_loss)
-    print('Training MSE: ', train_MSE)
-    print('Test MSE: ', test_MSE)
+    # print('====== Regularization =======')
+    # print('Training Loss', train_loss)
+    # print('Training MSE: ', train_MSE)
+    # print('Test MSE: ', test_MSE)
     
     # Plot MSE
     plt.figure(3, figsize=[9,4.5])
@@ -209,5 +209,7 @@ def PerformPrediction(P_list, w_list):
     
 
 if __name__ == '__main__':
-    Tut7_Q2() 
+    Tut7_Q2()
+    x = np.array([-10, -8, -3, -1, 2, 7])
+    print(CreateRegressors(x,4)[3]) 
     
